@@ -3,3 +3,152 @@
 --------------------------------------
 
 1- Introduction
+
+    - Pre-Flexbox:
+    Use different positional proprieties such as:
+     - absolute
+     - float & clear fixes
+     - Fixed height for column 
+
+    - Enter Flexbox:
+     - CSS Flexbox is a css display type designed to help us craft CSS layouts much easier.
+     - Control the position, size and spacing of element relative to their parent element and each other.
+     - Works great responsively
+
+    - The benefits of using CSS flexBox are:
+     - we can create Navigation bars and menu very easely
+     - create Grid layouts easely as well
+     - bar chart
+     - equal height columns
+
+2- Flex Containers 
+
+  After adding a display flex to a container, 
+  all children elements are floated to the left but the difference with 
+  float propriety, it is more easy to use.
+
+Using flexBox: 
+  .flex-container{
+    display: flex;
+    background-color: white;
+   
+   }
+
+    .box{
+        height: 100px;
+        min-width: 100px;
+    }
+
+Using float:
+ .box{
+     height: 100px;
+     min-width: 100px;
+     float: left
+  }
+
+  .flex-container{
+      background-color: white;
+  }
+
+  .flex-container::after{
+      content:"";
+      clear: both;
+      display: block;
+  } 
+
+==> Same result but floating an element is a little bit complicated.
+
+3- Flex Grow: (agrandir)
+    The flex-grow propriety specifies how much the item will grow relative to the rest 
+    of the flexible items inside the same container.
+    (it also defines the column inside an element)
+    NB: If the element is not a flexible item, the flex-grow has no effect
+
+    We use it to expand element into available space
+    (ampiasaina amn element anatin'ny flex-container)
+
+    Example:
+    .box{
+        height: 100px;
+        min-width: 100px;
+        flex-grow: 1;
+    }
+
+    Syntax:
+    flex-grow: number|initial|inherit;
+
+4- Flex Shrink: (retrecir)
+   Flex shrink is pretty much the oposite of flex grow.
+   The flex-shrink propriety specifies how much the item will shrink relative to the rest 
+   of the flexible items inside the same container.
+
+   NB:plus sa valeur est grande, sa taille devient plus petit lorsque le navigateur se retreci.
+
+   .box{
+        height: 100px;
+        width: 320px;
+        /* flex-grow: 1; */
+    }
+
+    .one{
+        background-color: blueviolet;
+        flex-shrink: 2;
+    }
+
+    .two{
+        background-color: palevioletred;
+        flex-shrink: 3;
+    }
+
+    .three{
+        background-color: yellowgreen;
+        flex-shrink: 1;
+    }
+
+5- Flex wrap: (envelopper)
+   The flex-wrap property specifies whether the flexible items should wrap or not.
+
+   NB: 
+   - When we reach the minimum width, we don't need to shrink anymore and wrap the element
+   to the next line.
+
+   - This property is used inside the flex-container
+
+   Syntax:
+   flex-wrap: nowrap|wrap|wrap-reverse|initial|inherit;
+
+   nowrap 	Default value. Specifies that the flexible items will not wrap
+   wrap 	Specifies that the flexible items will wrap if necessary
+   wrap-reverse 	Specifies that the flexible items will wrap, 
+   if necessary, in reverse order
+
+   Example:
+   .flex-container{
+        display: flex;
+        background-color: white;
+        flex-wrap: wrap-reverse;
+    }
+
+
+6- Flex basis
+   Flex basis defines the initial length of a flexible item 
+   It looks similar with min-width
+
+   Syntax: 
+   flex: flex-grow flex-shrink flex-basis|auto|initial|inherit;
+   flex: 1 0 200px; 
+
+7- Ceating a menu with Flexbox
+
+   a) justify-content:
+     - center/ flex-start/ flex-end/ space-around/ space-between
+
+     NB: we use it in a flex-container 
+
+
+ 
+
+
+
+
+

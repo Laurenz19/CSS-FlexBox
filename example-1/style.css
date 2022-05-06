@@ -15,7 +15,47 @@ body{
 
 /* menu base styles */
 
+nav a{
+    text-decoration: none;
+    color: white;
+}
+
+nav ul{
+    padding: 0;
+    background: rgb(54, 52, 52);
+   /*  display: flex;
+    flex-wrap: wrap; */
+    justify-content: center;
+}
+
+nav li{
+    list-style-type: none;
+    text-align: center;
+    display: block;
+   /*  flex-basis: 120px;
+    flex-grow: 1; */
+    padding: 15px;
+}
+
+nav li:hover{
+    background-color: rgb(201, 196, 196);
+}
+
 
 
 
 /* flex styles */
+
+@media screen and (min-width: 768px) {
+    nav ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav li{
+        flex-basis: 120px;
+        flex-grow: 1;
+    }
+}
