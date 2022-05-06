@@ -141,9 +141,27 @@ Using float:
 7- Ceating a menu with Flexbox
 
    a) justify-content:
+      The justify-content property aligns the flexible container's items
+      when the items don't use all available space on the main-axis.
+
      - center/ flex-start/ flex-end/ space-around/ space-between
 
+     Syntax:
+     justify-content: flex-start|flex-end|center|space-between|space-around|space-evenly|initial|inherit;
+
      NB: we use it in a flex-container 
+
+     - flex-start: 	Default value. Items are positioned at the beginning of the container
+     - flex-end :	Items are positioned at the end of the container
+     - center :	Items are positioned in the center of the container
+     - space-between: 	Items will have space between them 	
+     - space-around :	Items will have space before, between, and after them 	
+     - space-evenly :	Items will have equal space around them 	
+     - initial :	Sets this property to its default value. Read about initial 	
+     - inherit :	Inherits this property from its parent element.
+
+8- Create a nested flex menu 
+
 
 
  

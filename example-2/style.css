@@ -37,7 +37,29 @@ nav a:hover{
 }
 
 /* social menu base styles */
+nav .social{
+  margin: 0 auto;
+  max-width: 80px;
+}
 
+nav .social a.fb{
+  background: url('./img/fb.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60%;
+}
+
+nav .social a.tw{
+  background: url('./img/tw.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60%;
+}
+
+nav .social a{
+ text-indent: -10000px;
+ margin: 0 5px;
+}
 /* flex styles */
 
 @media screen and (min-width: 768px){
@@ -49,6 +71,22 @@ nav ul{
 nav li{
   flex: 1 1 0;
 }
-    
+
+nav{
+  display: flex;
+  justify-content: space-between;
+}
+
+nav .social a.fb{
+  background-size: 95%;
+}
+
+nav .social a.tw{
+  background-size: 95%;
+}
+nav .social{
+  margin: 0 5px !important;
+  max-width: 80px;
+}
 } /* end media 768 */
 
