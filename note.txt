@@ -197,7 +197,10 @@ Using float:
 
     NB: We use it inside flex-container
 
- 
+10- Element order
+    The order property specifies the order of a flexible item relative to 
+    the rest of the flexible items inside the same container.
+
 
 
 
