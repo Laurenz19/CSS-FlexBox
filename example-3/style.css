@@ -4,7 +4,7 @@
 }
 
 body{
-  background: #eee;
+  background-color: rgb(228, 226, 226);
   color: #333;
 }
 
@@ -62,8 +62,26 @@ a.fb{
 
 /* grid vs flex base styles */
 
+#blocks{
+  margin: 10px auto;
+}
 
+#blocks article{
+  margin-bottom: 11px;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 5px;
+}
 
+article p{
+  text-align: justify;
+}
+
+article h2{
+  text-align: center;
+  font-size: 15px;
+  margin: 5px;
+}
 /* flex styles */
 
 nav ul.social li{
@@ -92,6 +110,18 @@ nav{
   
 ul.social{
   margin: 0;
+}
+
+
+#blocks{
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#blocks article{
+  flex: 0 1 29.3%;
 }
     
 } /* end media 768 */

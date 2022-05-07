@@ -162,7 +162,40 @@ Using float:
 
 8- Create a nested flex menu 
 
+9- Flexbox: Flow and axis
 
+   a)flex-flow property:
+   This property is a shorthand property for setting both the flex-direction and 
+   flex-wrap  
+
+   flex-flow est un raccourci qui permet de spécifier si les éléments flexibles 
+   peuvent être multi-lignes (flex-wrap) et leurs dispositions (flex-direction) dans leur conteneur Flexbox Css.
+
+   Syntax:
+   flex-flow: flex-direction flex-wrap|initial|inherit;
+
+   - flex-direction 	Possible values:
+
+                        row
+                        row-reverse
+                        column
+                        column-reverse
+                        initial
+                        inherit
+
+                        Default value is "row". 
+    
+   - flex-wrap 	        Possible values:
+
+                        nowrap
+                        wrap
+                        wrap-reverse
+                        initial
+                        inherit
+
+                        Default value is "nowrap".
+
+    NB: We use it inside flex-container
 
  
 
